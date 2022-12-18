@@ -3,9 +3,21 @@
     margin: 0;
 }
 body{
-    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #26234d;
 }
 .header {
+    background-color: #7db3d3;
     border-bottom: 1px solid #e5e5e5;
     padding: 25px 0;
 }
@@ -18,7 +30,7 @@ body{
     align-items: center;
 }
 .menu {
-    margin-left: 500px;
+    margin-left: 700px;
 }
 .menu ul{
     list-style: none;
@@ -34,4 +46,90 @@ body{
 }
 .menu-item a:hover {
     border-bottom: 2px solid black;
+}
+.main {
+    margin-bottom: auto;
+margin-top: 50px;
+margin-left: 50px;
+margin-right: 50px;
+}
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section-profile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 30px 35px;
+    border-bottom: 15px solid #e0ecf8;
+}
+.section-profile-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+.section {
+    width: calc(50% - 20px);
+    padding: 5px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #7daeb4;
+}
+.section-main-title {
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: #165a81;
+}
+
+.section-main-subtitle {
+        margin-bottom: 20px;
+        font-size: 20px;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: #104b6d;
+    }
+.section-title {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #4c77b6;
+}
+.section-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.section-item {
+    position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-left: 30px;
+}
+.section-item a {
+    text-decoration: none;
+    color: #3184b1;
+    transition: color 0.5s;
+}
+.section-item span {
+    color: #3184b1;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
